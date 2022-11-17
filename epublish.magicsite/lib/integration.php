@@ -45,7 +45,10 @@ class Integration
     if ( ! isset( $url['host'] ) ) {
       return FALSE;
     }
-    if ( checkdnsrr( $url['host'], "A" ) && gethostbyname( $url['host'] ) == gethostbyname( 'edusite.ru' ) ) {
+    $edusite  = array_column( dns_get_record( 'edusite.ru', DNS_A ), 'ip' );
+    $userHost = array_column( dns_get_record( $url['host'], DNS_A ), 'ip' );
+
+    if ( count( array_intersect( $edusite, $userHost ) ) ) {
       $output = $url['scheme'] . '://';
       $output .= $url['host'];
       if ( isset( $url['port'] ) ) {

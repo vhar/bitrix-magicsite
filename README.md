@@ -22,7 +22,7 @@
  2. Установленные расширения php-curl и php-dom
 
 # Установка
- 1. Скачайте ZIP архив плагина https://github.com/vhar/bitrix-magicsite/raw/master/epublish.magicsite.tar.gz;
+ 1. Скачайте ZIP архив плагина https://github.com/e-publish/bitrix-magicsite/raw/master/epublish.magicsite.tar.gz;
  2. Зайдите в административную панель CMS Bitrix вашего сайта;
      > Чтобы войти в административную панель Bitrix, вбейте в адресной строке ссылку http://ваш_сайт/bitrix/, где вместо «ваш_сайт» — доменное имя (адрес) вашего сайта.  
      > Откроется страница с формой для входа в админ-панель.  
